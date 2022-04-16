@@ -1,0 +1,19 @@
+<p>nav works!</p>
+<ul class="nav justify-content-end" *ngIf="!authenticated">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routeurLink="/login">Login</a>
+    </li>
+   
+    <!-- <li class="nav-item">
+      <a class="nav-link disabled">Register</a>
+    </li> -->
+  </ul>
+  <ul class="nav justify-content-end" *ngIf="authenticated">
+     
+    <li class="nav-item">
+      <a  routeurLink="/login" class="nav-link disabled">Logout</a>
+    </li>
+  </ul>

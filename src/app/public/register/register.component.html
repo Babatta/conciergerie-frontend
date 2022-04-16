@@ -1,0 +1,124 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en-us">
+    <head>
+    
+      
+      <!--[if lte IE 9]>
+        <script src="js/respond.min.js" type="text/javascript"></script>
+      <![endif]-->
+  
+    </head>
+    <body class="enable-fixed-header">
+  
+      <!-- Start Header -->
+      <header id="header" class="triangle header-title fleet">
+  
+        <!-- Menu toggle -->
+        <label id="toggle" class="toggle"></label>
+  
+      
+        <!-- End Header-Inner -->
+  
+        <!-- Start Header-Title-Inner -->
+        
+        <!-- End Header-Title-Inner -->
+  
+      </header>
+      <!-- End Header -->
+  
+      <!-- Start Section Fleets -->
+      <section class="fleets">
+        <div class="container">
+          <div class="row">
+  
+            <!-- Start Filters -->
+            <div class="">
+              
+                <h5 class="fleets-filters-title toggle-title">Formulaire d'inscription Prestataire de Service</h5>
+               
+                  <form [formGroup]="formregister" (submit)="submit()">
+                    <div class="form-row">
+                      
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nom</label>
+                        <input type="text" class="form-control" formControlName="name"  id="inputEmail4" >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Prenom</label>
+                        <input type="text" class="form-control"  formControlName="prenom" id="inputPassword4">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" formControlName="email" id="inputEmail4" >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" formControlName="password" id="inputPassword4">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Adresse</label>
+                        <input type="text" class="form-control" formControlName="adresse" id="inputEmail4" >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Cni</label>
+                        <input type="integer" class="form-control" formControlName="cni" id="inputPassword4" >
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Telephone</label>
+                        <input type="integer" class="form-control" formControlName="telephone" id="inputEmail4" >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Sexe</label>
+
+                        <select type= "text" class="form-control"  formControlName="sexe"  id="inputPassword4">
+                          <option selected>Choose...</option>
+                          <option value="masculin">Masculin</option>
+                          <option value="feminin">Feminin</option>
+                          
+                        </select>
+
+                       
+                      
+                      </div>
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                  </form> 
+                  
+                
+              
+            </div>
+            <!-- End Filters -->
+          
+            <!-- Start Fleets-Listing-Header -->
+            <div class="col-lg-9">
+              
+ 
+
+
+
+
+
+
+            </div>
+            <!-- End Fleets-Listing-Header -->
+                
+            
+          
+  
+          </div>
+        </div>
+      </section>
+      <!-- End Section Fleets -->
+  
+      
+      <app-pfooter></app-pfooter>

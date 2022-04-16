@@ -1,0 +1,199 @@
+<!-- Start Header -->
+<header id="header" class="triangle">
+
+    <!-- Menu toggle Mobile -->
+    <label id="toggle" class="toggle"></label>
+  
+      <!-- Start Header-Inner -->
+      <div class="header-inner cleafix">
+  
+        <!-- Start Header-Logo -->
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="/assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <!-- End Header-Logo -->
+  
+        <!-- Start Header-Tool-Bar -->
+        <div class="header-tool-bar">
+          <div class="container">
+            <div class="row">
+  
+              <!-- Start Header-Left -->
+              <div class="col-lg-4 col-md-5 col-xs-12 header-left">
+  
+                <!-- Start Header-Contact -->
+                <ul class="custom-list header-contact">
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    +221 77 305 18 91
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope"></i>
+                      <a href="mailto:example@example.com">
+                      concierge@example.com
+                      </a>
+                  </li>
+                </ul>
+                <!-- End Header-Contact -->
+  
+              </div>
+              <!-- End Header-Left -->
+  
+              <!-- Start Header-Right -->
+              <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 col-lg-offset-4 col-md-offset-2 header-right">
+  
+                <!-- Start Social -->
+                <ul class="header-social custom-list">
+                  <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul> 
+                <!-- End Social -->
+  
+                <!-- Start Header-Login -->
+                <div class="header-login">
+                  <button class="header-btn">
+                  <i class="fa fa-key"></i>
+                  Connexion
+                  </button>
+                  
+                  <div class="header-form">
+                    <form action="index.html" class="default-form" [formGroup]="form" (submit)="submit()">
+                      <p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> Tous les champs sont obligatoires! <i class="fa fa-times close"></i></p>
+                      <p class="form-row">
+                        <input formControlName="email" class="required email" type="email" placeholder="Email">
+                      </p>
+                      <p class="form-row">
+                        <input formControlName="password"  class="required" type="password" placeholder="Password">
+                      </p>
+                      <p class="form-row">
+                        <button type="submit" class="submit-btn btn light">Connexion</button>
+                      </p>
+                      <p class="form-row forgot-password">
+                        <a href="#">Mot de passe Oublié?</a>
+                      </p>
+                    </form>
+  
+                    
+                  </div>
+                </div>
+                <!-- <div class="header-login">
+                <button class="header-btn">
+                  <i class=""></i>
+                  S'inscrire
+                  </button>
+                </div> -->
+                <!-- End Header-Login -->
+  
+                <!-- Start Header-Language -->
+                <div class="header-language">
+                  <button class="header-btn">
+                  <i class="fa fa-globe"></i>
+                  EN
+                  </button>
+                  <nav class="header-form">
+                    <ul class="custom-list">
+                      <li class="active"><a href="#">EN</a></li>
+                      <li><a href="#">DE</a></li>
+                      <li><a href="#">FR</a></li>
+                      <li><a href="#">IT</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- End Header-Language -->
+  
+              </div>
+              <!-- End Header-Right -->
+  
+            </div>
+          </div>
+        </div>
+  
+     
+  
+        
+        <!-- End Header-tool-bar -->
+  
+        <!-- Start Header-Nav -->
+        <div class="header-nav">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+  
+                <!-- Start Nav -->
+                <nav role="navigation">
+                  <ul class="nav navbar-nav">
+                    <li class="has-submenu">
+                      <a href="index.html" class="active">Accueil</a>
+                     <!--  <ul class="sub-menu custom-list">
+                        <li><a href="index2.html">Homepage 2</a></li>
+                        <li><a href="index3.html">Homepage 3</a></li>
+                        <li><a href="index4.html">Homepage 4</a></li>
+                        <li><a href="index5.html">Homepage 5</a></li>
+                      </ul> -->
+                    </li>
+                    <li class="has-submenu">
+                      <a href="#">Services</a>
+                      <ul class="sub-menu custom-list">
+                        <li><a href="fleet_list.html">Services aéroportuaires</a></li>
+                        <li><a href="fleet_grid.html">Personnel de maison</a></li>
+                        <li><a href="fleet_unit_details.html">Livraison/Reception de colis</a></li>
+                        <li><a href="fleet_unit_details.html">Evénements</a></li>
+                        <li><a href="fleet_unit_details.html">Service au quotidien</a></li>
+                        <li><a href="fleet_unit_details.html">Tourismes</a></li>
+                        <li><a href="fleet_unit_details.html">Clinique et Hopital</a></li>
+                        <li><a href="fleet_unit_details.html">Bon coins</a></li>
+                        <li><a href="fleet_unit_details.html">Locations</a></li>
+                        <li><a href="fleet_unit_details.html">Hotel et Restaurant</a></li>
+                        <li><a href="fleet_unit_details.html">Voyages</a></li>
+                      </ul>
+                    </li>
+                   
+                    <li class="has-submenu">
+                      <a href="locations.html">Abonnements</a> 
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                  <li class="has-submenu">
+                    <a href="about.html">L'entreprise</a>
+                    <!-- <ul class="sub-menu custom-list">
+                      <li><a href="shortcodes.html">Shortcodes</a></li>
+                    </ul> 
+                  </li>-->
+                  <li><a href="testimonials.html">Témoignages</a></li>
+                  <li class="has-submenu">
+                    <a href="news.html">Contact</a>
+                    <!-- <ul class="sub-menu custom-list">
+                      <li><a href="single_post.html">Single New Post</a></li>
+                    </ul> -->
+                  </li>
+                  <li class="has-submenu">
+                    <a href="#">Nous Rejoindre</a>
+                    <ul class="sub-menu custom-list">
+                      <li><a routerLink="/register-client">Client</a></li>
+                      <li><a routerLink="/register-pres">Prestataire de Service</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                </nav>
+                <!-- End Nav -->
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Header-Nav -->
+  
+      </div>
+      <!-- End Header-Inner -->
+  
+    
+  
+    
+    <!-- End Banner -->
+  
+  </header>
+      <!-- End Header -->
+  
